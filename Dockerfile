@@ -1,5 +1,7 @@
 FROM jenkins/jenkins:2.106-alpine
-USER root RUN apk add --update --no-cache \ docker
+USER root
+RUN apk add --update --no-cache \
+    docker
 USER jenkins
-COPY plugins.txt /usr/share/jenkins/ref/plugins.txt 
+COPY plugins.txt /usr/share/jenkins/ref/plugins.txt
 RUN /usr/local/bin/install-plugins.sh < /usr/share/jenkins/ref/plugins.txt

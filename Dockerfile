@@ -1,4 +1,4 @@
-FROM jenkins/jenkins:2.117-alpine
+FROM jenkins/jenkins:2.140-alpine
 USER root
 RUN apk add --update --no-cache \
     docker

@@ -59,6 +59,7 @@ email-ext:latest
 embeddable-build-status:latest
 extended-choice-parameter:latest
 external-monitor-job:latest
+external-workspace-manager:latest
 favorite:latest
 git:latest
 git-changelog:latest
